@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications - Ehsan Latif</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/modern.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ehsan Latif</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html" class="active">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Publications</h1>
+            </div>
+        </section>
+
+        <section class="publications-section publications">
+            <div class="container">
+                <div class="sort-filters">
+                    <div class="sort-controls">
+                        <label for="sort-pubs">Sort by:</label>
+                        <select id="sort-pubs" class="sort-select">
+                            <option value="newest" selected>Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                    <div class="filter-controls">
+                        <label for="filter-pubs">Filter by:</label>
+                        <select id="filter-pubs" class="filter-select">
+                            <option value="all" selected>All Publications</option>
+                            <option value="journal">Journal Articles</option>
+                            <option value="conference">Conference Papers</option>
+                            <option value="book">Book Chapters</option>
+                            <option value="preprint">Preprints</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="publications-list" id="publications-container">
+                    <!-- Page 1 content -->
+                    <div class="publications-page" data-page="1">
+                        <div class="publication-item" data-type="journal">
+                            <div class="publication-date">2024</div>
+                            <div class="publication-content">
+                                <h2>Fine-tuning ChatGPT: State Machine Programming Assistance for Automated Scoring</h2>
+                                <div class="publication-authors">Ehsan Latif, David W. Moore, Sandeep R. Kollannur, Logan White, & Jenay Robert</div>
+                                <div class="publication-venue">Computers and Education: Artificial Intelligence</div>
+                                <div class="publication-date">January 2024</div>
+                                <p>This paper demonstrates how fine-tuning LLMs can significantly improve their performance on specialized educational assessment tasks. We present a novel approach using state machine diagrams to enhance GPT models for automatic scoring of educational assessments.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1016/j.caeai.2024.100210" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                    <a href="https://github.com/ehsanlatif/ChatGPT-fineTuning" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2024</div>
+                            <div class="publication-content">
+                                <h2>HGP-RL: Distributed Hierarchical Gaussian Processes for Wi-Fi-based Relative Localization in Multi-Robot Systems</h2>
+                                <div class="publication-authors">Ehsan Latif, Safraz Nayeem, David W. Moore, & Frederick C. Harris Jr.</div>
+                                <div class="publication-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</div>
+                                <div class="publication-date">June 2024</div>
+                                <p>This paper introduces a novel distributed hierarchical Gaussian Processes approach for Wi-Fi-based relative localization in multi-robot systems, significantly improving localization accuracy while reducing computational complexity.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1109/IROS58592.2024.10802653" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                    <a href="https://github.com/ehsanlatif/HGP-RL" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2024</div>
+                            <div class="publication-content">
+                                <h2>Anchor-Oriented Localized Voronoi Partitioning for GPS-denied Multi-Robot Coverage</h2>
+                                <div class="publication-authors">Safraz Nayeem, Ehsan Latif, Frederick C. Harris Jr., & David W. Moore</div>
+                                <div class="publication-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</div>
+                                <div class="publication-date">June 2024</div>
+                                <p>This paper presents a novel approach to multi-robot coverage in GPS-denied environments using Voronoi partitioning with anchor orientation, resulting in more efficient area coverage and reduced computational overhead.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1109/IROS58592.2024.10802222" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2024</div>
+                            <div class="publication-content">
+                                <h2>PhysicsAssistant: Real-time Natural Language Command Execution and Path Planning in Physics Laboratories</h2>
+                                <div class="publication-authors">Ehsan Latif, David W. Moore, & Gennaro De Luca</div>
+                                <div class="publication-venue">IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</div>
+                                <div class="publication-date">March 2024</div>
+                                <p>This paper introduces PhysicsAssistant, a novel robotic system that interprets natural language commands to perform laboratory tasks in real-time, significantly enhancing human-robot collaboration in physics laboratories.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1109/RO-MAN60168.2024.10731312" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                    <a href="https://github.com/ehsanlatif/PhysicsAssistant" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="preprint">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>AI Gender Bias, Disparities, and Fairness: Does Training Data Matter?</h2>
+                                <div class="publication-authors">Ehsan Latif, Camille Dickson-Deane, & Jenay Robert</div>
+                                <div class="publication-venue">arXiv preprint</div>
+                                <div class="publication-date">December 2023</div>
+                                <p>This preprint examines how training data composition affects gender bias in AI systems, providing empirical evidence on the relationship between data diversity and fairness outcomes in machine learning models.</p>
+                                <div class="publication-links">
+                                    <a href="https://arxiv.org/abs/2312.10833" target="_blank" class="publication-link">arXiv</a>
+                                    <a href="https://github.com/ehsanlatif/AI-gender-bias" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 2 content -->
+                    <div class="publications-page" data-page="2" style="display: none;">
+                        <div class="publication-item" data-type="journal">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>On the Intersection of Computational Geometry Algorithms with Mobile Robot Path Planning</h2>
+                                <div class="publication-authors">Ehsan Latif, David W. Moore, & Frederick C. Harris Jr.</div>
+                                <div class="publication-venue">Algorithms</div>
+                                <div class="publication-date">November 2023</div>
+                                <p>This paper explores the intersection of computational geometry algorithms with mobile robot path planning, reviewing key algorithmic approaches and their applications in robotic navigation and obstacle avoidance.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.3390/a16110498" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="journal">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>The Promise of LLMs for Educational Assessment: A Systematic Review of ChatGPT, GPT-4, and Beyond</h2>
+                                <div class="publication-authors">Ehsan Latif, Jenay Robert, & David W. Moore</div>
+                                <div class="publication-venue">Computers and Education: Artificial Intelligence</div>
+                                <div class="publication-date">September 2023</div>
+                                <p>This systematic review examines the current state and future potential of Large Language Models in educational assessment, highlighting both capabilities and limitations of models like ChatGPT and GPT-4.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1016/j.caeai.2023.100124" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="journal">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>Evaluating ChatGPT: How Generative AI Models Perform on Automated Scoring of Short-Response Science Assessment Items</h2>
+                                <div class="publication-authors">Ehsan Latif, Jenay Robert, & David W. Moore</div>
+                                <div class="publication-venue">Journal of Science Education and Technology</div>
+                                <div class="publication-date">July 2023</div>
+                                <p>This study evaluates the performance of ChatGPT on automated scoring of short-response science assessment items, comparing its effectiveness against traditional machine learning approaches and human scorers.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1007/s10956-023-10051-2" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                    <a href="https://github.com/ehsanlatif/ChatGPT-ASR" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>Robust Human-Swarm Interaction via Depth-Sensing Gesture Recognition</h2>
+                                <div class="publication-authors">Ehsan Latif, David W. Moore, & Frederick C. Harris Jr.</div>
+                                <div class="publication-venue">International Conference on Human-Computer Interaction (HCII)</div>
+                                <div class="publication-date">June 2023</div>
+                                <p>This paper presents a novel depth-sensing gesture recognition system for human-swarm interaction, enabling intuitive and robust control of robot swarms through natural hand gestures.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1007/978-3-031-35832-8_52" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                    <a href="https://github.com/ehsanlatif/HSI-Gesture" target="_blank" class="publication-link">Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item" data-type="book">
+                            <div class="publication-date">2023</div>
+                            <div class="publication-content">
+                                <h2>Multi-Agent Particle Swarm Optimization for Distributed Task Allocation in Multi-Robot Systems</h2>
+                                <div class="publication-authors">Ehsan Latif, Frederick C. Harris Jr., & David W. Moore</div>
+                                <div class="publication-venue">Handbook of Research on Distributed Knowledge Management</div>
+                                <div class="publication-date">March 2023</div>
+                                <p>This book chapter introduces a novel Multi-Agent Particle Swarm Optimization approach for distributed task allocation in multi-robot systems, demonstrating improved efficiency and scalability compared to traditional methods.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.4018/978-1-7998-9662-6.ch005" target="_blank" class="publication-link">DOI</a>
+                                    <a href="#" class="publication-link">PDF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <ul class="pagination" id="publications-pagination">
+                    <li class="pagination-prev disabled"><span><i class="fa fa-chevron-left"></i> Previous</span></li>
+                    <li class="active"><span>1</span></li>
+                    <li><a href="#" data-page="2">2</a></li>
+                    <li class="pagination-next"><a href="#" data-page="2">Next <i class="fa fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="awards-section">
+            <div class="container">
+                <h2 class="section-title">Awards & Honors</h2>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>CPS Rising Star 2025</h3>
+                            <p>Awarded a highly competitive fellowship to attend the NSF Cyber Physical Systems Rising Star Workshop and PI meeting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>Pioneers of Natural Sciences Laboratory Robotics Award (ICRA-24)</h3>
+                            <p>Selected for the Pioneers of Natural Sciences Laboratory Robotics talk at ICRA 2024 and received an award of £500.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>CGS/ProQuest Distinguished Dissertation Award Nominee</h3>
+                            <p>PhD dissertation nominated by the University of Georgia for the 2024 ProQuest Distinguished Dissertation Award.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>Graduate Research Excellence Award</h3>
+                            <p>Nominated by the School of Computing at the University of Georgia for research excellence during doctoral studies.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fa fa-medal"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>James L. Carmon Scholarship Award (Honorable Mention)</h3>
+                            <p>Received for excellence in designing and implementing efficient computing algorithms for robotics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Ehsan Latif. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="mailto:ehsanlatif000@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href="https://github.com/ehsanlatif" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ehsan-latif-phd" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=UsrsXx0AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap scholar-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/modern.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Pagination functionality
+            $('#publications-pagination a').on('click', function(e) {
+                e.preventDefault();
+                var targetPage = $(this).data('page');
+                
+                // Hide all pages
+                $('.publications-page').hide();
+                
+                // Show target page
+                $('.publications-page[data-page="' + targetPage + '"]').show();
+                
+                // Update pagination active state
+                $('#publications-pagination li').removeClass('active');
+                $('#publications-pagination li').removeClass('disabled');
+                
+                // Set active page
+                $('#publications-pagination li a[data-page="' + targetPage + '"]').parent().addClass('active');
+                
+                // Update prev/next buttons
+                if (targetPage == 1) {
+                    $('.pagination-prev').addClass('disabled');
+                    $('.pagination-prev span').show();
+                    $('.pagination-prev a').hide();
+                } else {
+                    $('.pagination-prev').removeClass('disabled');
+                    $('.pagination-prev span').hide();
+                    $('.pagination-prev a').show().data('page', targetPage - 1);
+                }
+                
+                var totalPages = 2; // Update this if you add more pages
+                if (targetPage == totalPages) {
+                    $('.pagination-next').addClass('disabled');
+                    $('.pagination-next span').show();
+                    $('.pagination-next a').hide();
+                } else {
+                    $('.pagination-next').removeClass('disabled');
+                    $('.pagination-next span').hide();
+                    $('.pagination-next a').show().data('page', targetPage + 1);
+                }
+            });
+            
+            // Sorting and filtering functionality
+            function applyFiltersAndSort() {
+                var sortOrder = $('#sort-pubs').val();
+                var filterType = $('#filter-pubs').val();
+                var $pubContainer = $('#publications-container');
+                
+                // Show all items first
+                $('.publication-item').show();
+                
+                // Apply type filtering
+                if (filterType !== 'all') {
+                    $('.publication-item').not('[data-type="' + filterType + '"]').hide();
+                }
+                
+                // Apply sorting
+                var $pages = $pubContainer.find('.publications-page').detach();
+                $pages.each(function() {
+                    var $page = $(this);
+                    var $items = $page.find('.publication-item:visible').detach();
+                    
+                    $items.sort(function(a, b) {
+                        var yearA = parseInt($(a).find('.publication-date').text());
+                        var yearB = parseInt($(b).find('.publication-date').text());
+                        
+                        if (sortOrder === 'oldest') {
+                            return yearA - yearB;
+                        } else {
+                            return yearB - yearA;
+                        }
+                    });
+                    
+                    $page.append($items);
+                });
+                $pubContainer.append($pages);
+                
+                // Reset to first page
+                $('#publications-pagination a[data-page="1"]').click();
+            }
+            
+            // Bind events
+            $('#sort-pubs, #filter-pubs').on('change', function() {
+                applyFiltersAndSort();
+            });
+            
+            // Initialize with default settings
+            applyFiltersAndSort();
+        });
+    </script>
+</body>
+</html> 

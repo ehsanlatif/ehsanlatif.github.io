@@ -1,0 +1,94 @@
+/* Publication fixes CSS */
+.publications .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.publications .col-md-6 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.publication-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.pub-description {
+    flex-grow: 1;
+}
+
+.pub-link {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Publication-specific styling */
+.publications .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.publications h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.publications .publication-authors {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.publications .publication-venue {
+    font-style: italic;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.publications .publication-date {
+    display: block;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.publications .publication-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 18px;
+}
+
+.publications .btn-outline {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Fix for duplicate year labels */
+.publications .publication-item .publication-date:first-child {
+    display: none;
+}
+
+/* Make sure the publication items have proper spacing */
+.publications .publication-item {
+    margin-bottom: 10px;
+}
+
+/* Ensure consistent padding */
+.publications .publication-content {
+    padding: 10px;
+}
+
+/* Ensure "View All Publications" button is properly styled */
+.publications .text-center .btn-outline {
+    display: inline-block;
+    margin-top: 10px;
+} 

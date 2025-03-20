@@ -1,405 +1,190 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ehsan Latif</title>
+    <title>Ehsan Latif - AI Research Scientist</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/modern.css" rel="stylesheet">
+    <link href="css/publication-fixes.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Ehsan Latif</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <div id="profilepicture"><img src="images/my_pic.jpg"></img></div>
-            <div class="before-name">Hello, I'm</div>
-            <h1>Ehsan Latif.</h1>
-            <h2>Machine Learning Engineer and Researcher.</h2>
-            <a href="resume/ehsan_Resume_ML.pdf" target="_blank" class="btn-rounded-white" download>Resume</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="mailto:ehsanlatif000@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ehsanlatif" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/ehsan-latif-phd" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://scholar.google.com/citations?user=UsrsXx0AAAAJ&hl=en" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Hi! I'm Ehsan Latif, a Machine Learnig Engineer and Researcher, working at University of Georgia, Athens, GA.
-                    </p>
-                    <br>
-                    <p>
-                        I am a dedicated machine learning engineer and researcher with substantial experience developing and deploying machine learning models.
-                        My expertise spans across robotics, artificial intelligence, and multi-robot systems.
-                        I have led various research projects, developed cloud-based solutions, and collaborated with interdisciplinary teams.
-                        Proficient in Python, Tensorflow, PyTorch, C++, AWS, and ROS, I specialize in data engineering, software development, and applied machine learning.
-                        My goal is to leverage my skills to drive innovative solutions in the industry.
-                    </p>
-                    <br>
-                    <p>
-                        In my free time I like to watch historical documentries, cooking food and playing ukelele. I can solve rubik's cube in 45 seconds but keep improving my speed.
-                    </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-image">
+                            <img src="images/my_pic.jpg" alt="Ehsan Latif">
+                            <div class="social-links">
+                                <a href="mailto:ehsanlatif000@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                                <a href="https://github.com/ehsanlatif" target="_blank"><i class="fa fa-github"></i></a>
+                                <a href="https://linkedin.com/in/ehsan-latif-phd" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://scholar.google.com/citations?user=UsrsXx0AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap scholar-icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="bio-content">
+                            <h2>Ehsan Latif</h2>
+                            <h3>AI Research Scientist</h3>
+                            <!-- <p class="current-position">Postdoctoral Research Associate at University of Georgia, Athens, GA</p> -->
+                            
+                            <div class="bio-text">
+                                <p>I am an AI researcher with 5+ years of experience specializing in natural language processing, large language models (LLMs), multi-agent/multi-robot systems, and autonomous and intelligent systems optimizations.</p>
+                                <p>I conduct high-impact AI research in decision-making, AI orchestration, and trustworthy AI, with a focus on safe, robust, and sustainable AI applications. My expertise includes training and optimizing transformer-based models, efficient inference deployment, and integrating LLMs into multi-agent coordination.</p>
+                            </div>
+                            
+                            <!-- <div class="contact-info">
+                                <h4>Contact Information</h4>
+                                <ul>
+                                    <li><i class="fa fa-envelope"></i> <a href="mailto:ehsanlatif000@gmail.com">ehsanlatif000@gmail.com</a></li>
+                                    <li><i class="fa fa-phone"></i> +1(706) 461-7520</li>
+                                    <li><i class="fa fa-map-marker"></i> University of Georgia, Athens, GA</li>
+                                </ul>
+                            </div> -->
+                            
+                            <!-- <div class="cta-buttons">
+                                <a href="resume/ehsan_Resume_ML.pdf" class="btn btn-primary" target="_blank" download>Download CV</a>
+                                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
+        </section>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2023 – Present">
-                <h3>University of Georgia</h3>
-                <h4>Postdoctoral Research Associate</h4>
-                <ul>
-                    <li>Working on an NSF-funded project on designing automatic assessment items, and rubrics and training machine learning models for automatic scoring.
-                    <li>Investigating the use of large language models for the educational domain.
-                    <li>Leading a team of graduate and undergraduate students on different tasks such as online platform development, knowledge distillation for ML model deployment, and conducting professional development and school survey sessions.
-                </ul>
-            </div>
-
-            <div data-date="January 2021 - July 2023">
-                <h3>University of Georgia</h3>
-                <h4>Graduate Research Assistant</h4>
-                <ul>
-                    <li>A combined position involve machine learning and robotics research.
-                    <li>Conducted research on multi-robot systems to improve localization accuracy, efficient Path planning, and exploration in dense and dynamic environments.
-                    <li>Served as a project leader and software developer for Django, Android, and iOS application for ML Operations.                        
-                </ul>
-            </div>
-
-            <div data-date="Janurary 2019 – December 2022">
-                <h3>Lahore University of Management Sciences - Lahore, PK </h3>
-                <h4>Research Associate </h4>
-                <ul>
-                    <li>Worked at NSG Lab under Dr. Ihsan Ayyub Qazi on a mobile web optimization project. 
-                    <li>Developed Native Android application for memory stress testing on web browser content rendering.
-                    <li>Collaborate with a team that analyzes mobile web behavior under high memory and processing pressure.
-                </ul>
-            </div>
-
-            <div data-date="August 2018 – Januray 2019">
-                <h3>Strategic Systems International – Lahore, PK </h3>
-                <h4>Software Engineer</h4>
-                <ul>
-                    <li>Designed synchronization framework code items, materials, and similar building plans for heterogeneous systems.
-                    <li>Implemented a framework to synchronize data from multiple sources.
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>The University of Georgia – Athens, GA</h3>
-            <span class="education-date">Januray 2021 - August 2023</span>
-            <h4>Doctor of Philosophy in Computer Science</h4>
-            <p><b>Dissertation Title:</b> Collaborative Algorithms for Localization and Exploration in Multi-Robot Systems</p>
-            <p><b>Related Coursework:</b> Deep learning, Machine learning, Decision Making under uncertaining, Cyber physical Systems, Multi-robot systems, Fundamentals of Robotics.</p>
-            <p><b>CGPA : 3.91</b></p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>The National University of Computer and Emerging Sciences – Lahore, PK</h3>
-            <span class="education-date">August 2014 - May 2018</span>
-            <h4>Bachelor of Science in Computer Science </h4>
-            <p><b>Relevant Coursework:</b> Natural Language Processing, Artificial Intelligence, Machine Learning, Data Structures and Algorithms, Database Systems , Operating Systems, Computer Networks.</p>
-            <p><b>CGPA : 3.2</b></p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large" style="height: 400px;">
-                    <div class="project-image">
-                        <img src="images/PASTA.png" />
+        <section class="publications">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <h2>Communication-Efficient Multi-Robot Exploration Using Coverage-biased Distributed Q-Learning</h2>
+                                <div class="publication-authors">Ehsan Latif, Ramviyas Parasuraman</div>
+                                <div class="publication-venue">IEEE Robotics and Automation Letters</div>
+                                <div class="publication-date">February 2024</div>
+                                <p>Developed a reinforcement learning approach that significantly reduces communication overhead while maintaining exploration efficiency for multi-robot systems.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1109/LRA.2024.3358095" target="_blank" class="publication-link">Read Paper</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Supporting Instructional Decision Making: The Potential of An Automatically Scored Three-dimensional Assessment System</h3>
-                        <p><b>Description:</b> Developed Android, iOS, Django web application, trained machine learning models for automatic scoring, deployed models to AWS-EC2, integrated with Django application using AWS-Lambda functions, created DynamoDB for datastore, and integrated with each application using Amplify.</p> 
-                        <p><b>Technologies:</b> CNN, BERT, AWS-(EC2, S3, Lambda, DynamoDB), Django, Android, Java, Kotlin, XCode, Amplify, Swift.</p> 
-                        <p><b>Outcome:</b> A complete solution for automatic scoring of science assessments in the form of fully functional web application.</p> 
-                        </p>
-                        <a href="https://ai4stem.org/models/" target="_blank">Model's Repository</a>
-                    </br>
-                        <a href="https://ai4pasta.org/" target="_blank">Web Application</a>
+                    <div class="col-md-6">
+                        <div class="publication-item">
+                            <div class="publication-content">
+                                <h2>Fine-tuning ChatGPT for Automatic Scoring</h2>
+                                <div class="publication-authors">Ehsan Latif, Xiaoming Zhai</div>
+                                <div class="publication-venue">Computers & Education: Artificial Intelligence</div>
+                                <div class="publication-date">January 2024</div>
+                                <p>Implemented specialized fine-tuning techniques on ChatGPT for automating the scoring of educational assessments.</p>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1016/j.caeai.2024.100210" target="_blank" class="publication-link">Read Paper</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/PhysicsAssistant_overview.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>PhysicsAssistant: An LLM-Powered Interactive Learning Robot for Physics Lab Investigations</h3>
-                        <p> <b>Description</b> Developed an interactive learning system leveraging YOLOv8 object detection, speech recognition, and large language models (LLMs) to assist students in physics.</p>
-                        <p><b>Technologies:</b>  YOLOv8, Google ASR, Prompt Engineering, BERT, GPT-3.5, and GPT-4.</p>
-                        <p><b>Outcome:</b> Enhanced the learning experience and provided real-time feedback to students using PhysicsAssistant.</p>
-                        <a href="https://github.com/ehsanlatif/PhysicsAssistant" target="_blank">View Project</a>                            
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/KD_architecture.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Knowledge Distillation of LLM for Automatic Scoring of Science Education Assessments</h3>
-                        <p> <b>Description</b> Designed and implemented LLM Distillation using Loss Function Optimization for automatic scoring of unknown student written responses on resource-constraint devices.</p>
-                        <p><b>Technologies:</b> BERT, Llama-2, GPT-3.5, Tensorflow, Hugging Face, CUDA</p>
-                        <p><b>Outcome:</b> Reduced trained model size and achieved high automatic scoring accuracy in real-time.</p>
-                        <a href="https://github.com/ehsanlatif/knowledge_distillation" target="_blank">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/G-SciEdBERT_architecture.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>G-SciEdBERT: A Contextualized LLM for Science Assessment Tasks in German</h3>
-                        <p> <b>Description</b> Pre-trained Language Model for German written student responses and fine-tuned for automatic scoring.</p>
-                        <p><b>Technologies:</b> BERT, G-BERT, PyTorch, Tensorflow, Hugging Face</p>
-                        <p><b>Outcome:</b> German Science Education BERT Model trained and deployed to Hugging Face for real-time inferencing.</p>
-                        <a href="https://github.com/ehsanlatif/G-SciEdBERT" target="_blank">GitHub Repository</a>
-                    </br>
-                        <a href="https://huggingface.co/ai4stem-uga/G-SciEdBERT" target="_blank">Hugging Face Model Repository</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/ChatGPT-fine-tuning.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Fine-tuning ChatGPT for Automatic Scoring</h3>
-                        <p> <b>Description</b> Implemented fine-tuning techniques on ChatGPT for automating the scoring of educational assessments.</p>
-                        <p><b>Technologies:</b> GPT-3.5, PyTorch, HuggingFace</p>
-                        <p><b>Outcome:</b> Achieved significant improvements in the accuracy of automated scoring.</p>
-                        <a href="https://doi.org/10.1016/j.caeai.2024.100210" target="_blank">Publication</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/seal_overview.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>SEAL: Simultaneous Exploration And Localization for Multi-Robot Systems</h3>
-                        <p> <b>Description</b> Created an integrated solution for efficient and GPS-free exploration and localization solution for multi-robot system using graph optimization for localization, Gaussian Process Regression for exploration, and Bayesian fusion and optimization for integration.</p>
-                        <p><b>Technologies:</b> ROS, G2O, GPR, BO, Python</p>
-                        <p><b>Outcome:</b> A complete solution for indoor exploration and localization for multi-robot systems with improved localization accuracy and efficient exploration.</p>
-                        <a href="https://doi.org/10.1109/IROS55552.2023.10342157" target="_blank">Publication</a>
-                    </br>
-                        <a href="https://github.com/herolab-uga/ROS-SEAL" target="_blank">GitHub Repository</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/CQLite-overview.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Communication-Efficient Multi-Robot Exploration Using Coverage-biased Distributed Q-Learning</h3>
-                        <p> <b>Description</b> Created a distributed Q-learning algorithm to improve multi-robot exploration efficiency in dense environments.</p>
-                        <p><b>Technologies:</b> ROS, Q-learning, MDP, POMDP, Python, Gmapping, Movebase, Rviz</p>
-                        <p><b>Outcome:</b> Improved exploration coverage and reduced communication overhead.</p>
-                        <a href="https://doi.org/10.1109/LRA.2024.3358095" target="_blank">Publication</a>
-                    </br>
-                        <a href="https://github.com/herolab-uga/cqlite" target="_blank">GitHub Repository</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/CDOA_overview.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Instantaneous Wireless Robotic Node Localization Using Collaborative Direction of Arrival</h3>
-                        <p> <b>Description</b> Developed a system for indoor localization of robotic nodes using collaborative DOA and particle filters.</p>
-                        <p><b>Technologies:</b> ROS, Wireless Communication, Python</p>
-                        <p><b>Outcome:</b> Enhanced Localization accuracy for indoor and dynamic environments.</p>
-                        <a href="https://ieeexplore.ieee.org/document/10185556" target="_blank">Publication</a>
-                    </br>
-                        <a href="https://github.com/herolab-uga/cdoa-localization" target="_blank">GitHub Repository</a>
-                    </div>
-                    <!-- End .project-info -->
+                <div class="text-center mt-4">
+                    <a href="publications.html" class="btn btn-outline">View All Publications</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+        </section>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>JavaScript</li>
-            <li>Pandas</li>
-            <li>Numpy</li>
-            <li>Scikit-Learn</li>
-            <li>Tensorflow</li>
-            <li>PyTorch</li>
-            <li>Keras</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Computer Vision</li>
-            <li>Data Visualization</li>
-            <li>A/B Testing</li>
-            <li>ETL</li>
-            <li>DynamoDB</li>
-            <li>AWS</li>
-            <li>Git</li>
-            
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <!--DO NOT USE FORMSPREE LINK BELOW-->
-            <form method="POST" action="https://formspree.io/f/xrgorrdy"> <!--Please create your own formspree account and generate the code required-->
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+        <section class="latest-news-section">
+            <div class="container">
+                <h2 class="section-title">Latest News</h2>
+                <div class="latest-news-container">
+                    <div class="news-item">
+                        <div class="news-date">
+                            <i class="fa fa-calendar"></i> March 12, 2025
+                        </div>
+                        <h3>Awarded CPS Rising Star 2025 Fellowship</h3>
+                        <p>Received a highly competitive fellowship (&lt;0.17% acceptance rate) to attend the NSF Cyber Physical Systems Rising Star Workshop and PI meeting to establish scholarships and networks among the CPS community.</p>
+                        <a href="news.html" class="news-more">Read more <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">
+                            <i class="fa fa-calendar"></i> June 10, 2024
+                        </div>
+                        <h3>Papers Accepted at IROS 2024</h3>
+                        <p>Two papers accepted at the 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS): "HGP-RL: Distributed Hierarchical Gaussian Processes for Wi-Fi-based Relative Localization in Multi-Robot Systems" and "Anchor-Oriented Localized Voronoi Partitioning for GPS-denied Multi-Robot Coverage."</p>
+                        <a href="news.html" class="news-more">Read more <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">
+                            <i class="fa fa-calendar"></i> August 23, 2024
+                        </div>
+                        <h3>Earned Machine Learning Specialization from Stanford University</h3>
+                        <p>Successfully completed the Machine Learning Specialization from Stanford University, deepening my expertise in advanced machine learning techniques and applications.</p>
+                        <a href="news.html" class="news-more">Read more <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-all-link">
+                    <a href="news.html" class="btn btn-primary">View All News</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2024 Ehsan Latif
-                    </p>
+                <div class="col-md-6">
+                    <p>&copy; 2025 Ehsan Latif. All Rights Reserved.</p>
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="mailto:ehsanlatif000@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ehsanlatif" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/in/ehsan-latif-phd" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://scholar.google.com/citations?user=UsrsXx0AAAAJ&hl=en" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a href="mailto:ehsanlatif000@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href="https://github.com/ehsanlatif" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ehsan-latif-phd" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=UsrsXx0AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap scholar-icon"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/modern.js"></script>
 </body>
 
 </html>
