@@ -2224,3 +2224,194 @@ h4 {
 .btn, .btn-outline {
     font-size: 1.1rem;
 } 
+
+/* --- PROJECTS PAGE IMPROVEMENTS --- */
+.projects-section .project-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px 0 rgba(40,40,70,.06), 0 1.5px 2.5px 0 rgba(40,40,70,.03);
+    margin-bottom: 32px;
+    padding: 0;
+    overflow: hidden;
+    transition: box-shadow .18s;
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 480px;
+}
+
+.projects-section .project-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: #f4f4f8;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-section .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform .3s;
+    border-radius: 0;
+}
+
+.projects-section .project-item:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.projects-section .project-content {
+    padding: 24px 22px 22px 22px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-section .project-category {
+    background: #e3e9ff;
+    color: #2d378a;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: max-content;
+    min-width: 0;
+    display: inline-block;
+    padding: 2px 10px;      /* <-- less vertical and horizontal padding */
+    border-radius: 8px;     /* <-- a bit less rounded for a tighter fit */
+    margin-bottom: 2px;     /* <-- optional: a bit less margin */
+}
+
+.projects-section .btn.btn-outline {
+    border: 1.5px solid #3954eb;
+    background: transparent;
+    color: #3954eb;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all .15s;
+    font-size: 15px;
+}
+.projects-section .btn.btn-outline:hover {
+    background: #3954eb;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .projects-section .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px 0;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .projects-section .col-md-6 {
+        width: 50%;
+        max-width: 490px;
+        flex: 0 0 50%;
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+        display: flex;
+        margin-bottom: 32px;
+    }
+    .projects-section .project-item {
+        min-height: 480px;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .projects-section .col-md-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .projects-section .project-item {
+        min-height: 0;
+    }
+}
+
+/* Funded Research Projects design improvements */
+.funded-projects .funded-project-item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px 0 rgba(40,40,70,.06), 0 1.5px 2.5px 0 rgba(40,40,70,.03);
+    margin-bottom: 32px;
+    padding: 26px 24px 22px 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.funded-projects .row {
+    align-items: center;
+}
+.funded-projects .project-image {
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    background: #f6f7fb;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.funded-projects .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    border-radius: 12px;
+}
+
+.funded-projects .project-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 7px;
+    gap: 10px 14px;
+}
+.funded-projects .period {
+    background: #eaf2fd;
+    color: #326cc2;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+.funded-projects .role {
+    background: #d7fae6;
+    color: #1c6c46;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+.funded-projects .funding {
+    background: #fff1db;
+    color: #b3741c;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .funded-projects .col-md-8, .funded-projects .col-md-4 {
+        width: 100% !important;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .funded-projects .row {
+        flex-direction: column;
+    }
+}
