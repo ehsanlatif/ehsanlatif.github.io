@@ -685,7 +685,7 @@
                     var $node = $(it.node);
                     if ($node.find('.cite-actions').length === 0) {
                         var $actions = $('<div class="cite-actions"></div>');
-                        var $btn = $('<button type="button" class="cite-btn" data-cite="open">Cite</button>');
+                        var $btn = $('<button type="button" class="cite-btn" data-cite="open"><i class="fa fa-quote-right"></i> Cite</button>');
                         $actions.append($btn);
                         $node.find('.publication-content').append($actions);
                     }
@@ -802,7 +802,7 @@
 
                 var $overlay = $('#cite-modal-overlay');
                 $overlay.addClass('show');
-                $overlay.show();
+                $overlay.css('display','flex');
                 $('#cite-text').val(formatAPA());
                 $('.cite-tab-btn').removeClass('active');
                 $('.cite-tab-btn[data-format="apa"]').addClass('active');
@@ -811,13 +811,13 @@
                 $('#cite-scholar-link').attr('href', 'https://scholar.google.com/scholar?q=' + scholarQ);
 
                 // Prefetch APA/Bib using DOI/PMLR where available
-                if (doi) {
+                if (doi && window.fetch) {
                     if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey] = {};
                     // APA via Crossref content negotiation
                     fetchAPAFromDOI(doi).then(function(txt){ window.__citeCache[cacheKey].apa = txt; if ($('.cite-tab-btn.active').data('format')==='apa') $('#cite-text').val(txt); }).catch(function(){});
                     // BibTeX via Crossref
                     fetchBibFromDOI(doi).then(function(txt){ window.__citeCache[cacheKey].bib = txt; }).catch(function(){});
-                } else if (pmlrHref) {
+                } else if (pmlrHref && window.fetch) {
                     if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey] = {};
                     fetchBibFromPMLR(pmlrHref).then(function(txt){ window.__citeCache[cacheKey].bib = txt; }).catch(function(){});
                 }
@@ -830,10 +830,10 @@
                         var cachedBib = window.__citeCache[cacheKey] && window.__citeCache[cacheKey].bib;
                         if (cachedBib) {
                             $('#cite-text').val(cachedBib);
-                        } else if (doi) {
+                        } else if (doi && window.fetch) {
                             $('#cite-text').val('Loading BibTeX from DOI...');
                             fetchBibFromDOI(doi).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].bib = txt; }).catch(function(){ $('#cite-text').val(formatBib()); });
-                        } else if (pmlrHref) {
+                        } else if (pmlrHref && window.fetch) {
                             $('#cite-text').val('Loading BibTeX from PMLR...');
                             fetchBibFromPMLR(pmlrHref).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].bib = txt; }).catch(function(){ $('#cite-text').val(formatBib()); });
                         } else {
@@ -843,7 +843,7 @@
                         var cachedApa = window.__citeCache[cacheKey] && window.__citeCache[cacheKey].apa;
                         if (cachedApa) {
                             $('#cite-text').val(cachedApa);
-                        } else if (doi) {
+                        } else if (doi && window.fetch) {
                             $('#cite-text').val('Loading APA from DOI...');
                             fetchAPAFromDOI(doi).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].apa = txt; }).catch(function(){ $('#cite-text').val(formatAPA()); });
                         } else {
@@ -865,11 +865,11 @@
                 });
 
                 $('#cite-modal-close').off('click').on('click', function() {
-                    $('#cite-modal-overlay').removeClass('show').hide();
+                    $('#cite-modal-overlay').removeClass('show').css('display','none');
                 });
                 $('#cite-modal-overlay').off('click').on('click', function(e) {
                     if (e.target.id === 'cite-modal-overlay') {
-                        $('#cite-modal-overlay').removeClass('show').hide();
+                        $('#cite-modal-overlay').removeClass('show').css('display','none');
                     }
                 });
             }
