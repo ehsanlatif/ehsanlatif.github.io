@@ -52,6 +52,10 @@
         <section class="publications-section publications">
             <div class="container">
                 <div class="sort-filters">
+                    <div class="filter-controls" style="margin-right:auto;">
+                        <label for="search-pubs">Search:</label>
+                        <input type="text" id="search-pubs" class="filter-select" placeholder="Search title, authors, venue..." style="min-width:260px;">
+                    </div>
                     <div class="sort-controls">
                         <label for="sort-pubs">Sort by:</label>
                         <select id="sort-pubs" class="sort-select">
@@ -166,10 +170,31 @@
                         <div class="publication-item" data-type="conference">
                             <div class="publication-date">2025</div>
                             <div class="publication-content">
+                                <h2>SketchMind: A Multi-Agent Cognitive Framework for Assessing Student-Drawn Scientific Sketches</h2>
+                                <div class="publication-authors">E. Latif, Z. Khan, & X. Zhai</div>
+                                <div class="publication-venue">Neural Information Processing Systems (NeurIPS 2025)</div>
+                                <div class="publication-date">2025</div>
+                            </div>
+                        </div>
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2025</div>
+                            <div class="publication-content">
+                                <h2>Anonymous Self-Stabilising Localisation via Spatial Population Protocols</h2>
+                                <div class="publication-authors">L. Gąsieniec, L. Kuszner, E. Latif, R. Parasuraman, P. Spirakis, & G. Stachowiak</div>
+                                <div class="publication-venue">International Symposium on Algorithms and Computation (ISAAC 2025)</div>
+                                <div class="publication-date">2025</div>
+                            </div>
+                        </div>
+                        <div class="publication-item" data-type="conference">
+                            <div class="publication-date">2025</div>
+                            <div class="publication-content">
                                 <h2>Privacy-Preserved Automated Scoring using Federated Learning for Educational Research</h2>
                                 <div class="publication-authors">E. Latif & X. Zhai</div>
                                 <div class="publication-venue">International Conference on Artificial Intelligence in Education (AIED 2025)</div>
                                 <div class="publication-date">2025</div>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1007/978-3-031-99267-4_17" target="_blank" class="publication-link">DOI</a>
+                                </div>
                             </div>
                         </div>
                         <div class="publication-item" data-type="conference">
@@ -179,6 +204,9 @@
                                 <div class="publication-authors">L. Fang, E. Latif, H. Lu, Y. Zhou, P. Ma, & X. Zhai</div>
                                 <div class="publication-venue">International Conference on Artificial Intelligence in Education (AIED 2025)</div>
                                 <div class="publication-date">2025</div>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1007/978-3-031-99267-4_24" target="_blank" class="publication-link">DOI</a>
+                                </div>
                             </div>
                         </div>
                         <div class="publication-item" data-type="conference">
@@ -188,6 +216,9 @@
                                 <div class="publication-authors">S. Guo, Y. Wang, J. Yu, X. Wu, B. Aykin, F. Watt, E. Latif, L. Liu, N. Liu, & X. Zhai</div>
                                 <div class="publication-venue">International Conference on Artificial Intelligence in Education (AIED 2025)</div>
                                 <div class="publication-date">2024</div>
+                                <div class="publication-links">
+                                    <a href="https://doi.org/10.1007/978-3-031-98462-4_34" target="_blank" class="publication-link">DOI</a>
+                                </div>
                             </div>
                         </div>
                         <div class="publication-item" data-type="conference">
@@ -197,6 +228,9 @@
                                 <div class="publication-authors">E. Latif & X. Zhai</div>
                                 <div class="publication-venue">AAAI Workshop on Meta-Innovation and Responsibility in AI-Supported Education (2025)</div>
                                 <div class="publication-date">2025</div>
+                                <div class="publication-links">
+                                    <a href="https://proceedings.mlr.press/v273/latif25a.html" target="_blank" class="publication-link">Paper</a>
+                                </div>
                             </div>
                         </div>
                         <div class="publication-item" data-type="conference">
@@ -206,6 +240,9 @@
                                 <div class="publication-authors">G. Lee, L. Shi, E. Latif, & X. Zhai</div>
                                 <div class="publication-venue">NeurIPS Workshop on Large Foundation Models for Educational Assessment</div>
                                 <div class="publication-date">2024</div>
+                                <div class="publication-links">
+                                    <a href="https://proceedings.mlr.press/v264/lee25a.html" target="_blank" class="publication-link">Paper</a>
+                                </div>
                             </div>
                         </div>
                         <div class="publication-item" data-type="conference">
@@ -459,10 +496,9 @@
 
                 <!-- Pagination -->
                 <ul class="pagination" id="publications-pagination">
-                    <li class="pagination-prev disabled"><span><i class="fa fa-chevron-left"></i> Previous</span></li>
+                    <li class="pagination-prev disabled"><span><i class="fa fa-chevron-left"></i> Previous</span><a href="#" data-page="1" style="display:none;"><i class="fa fa-chevron-left"></i> Previous</a></li>
                     <li class="active"><span>1</span></li>
-                    <li><a href="#" data-page="2">2</a></li>
-                    <li class="pagination-next"><a href="#" data-page="2">Next <i class="fa fa-chevron-right"></i></a></li>
+                    <li class="pagination-next"><a href="#" data-page="2">Next <i class="fa fa-chevron-right"></i></a><span style="display:none;">Next <i class="fa fa-chevron-right"></i></span></li>
                 </ul>
             </div>
         </section>
@@ -548,93 +584,301 @@
     <script src="js/modern.js"></script>
     <script>
         $(document).ready(function() {
-            // Pagination functionality
-            $('#publications-pagination a').on('click', function(e) {
-                e.preventDefault();
-                var targetPage = $(this).data('page');
-                
-                // Hide all pages
-                $('.publications-page').hide();
-                
-                // Show target page
-                $('.publications-page[data-page="' + targetPage + '"]').show();
-                
-                // Update pagination active state
-                $('#publications-pagination li').removeClass('active');
-                $('#publications-pagination li').removeClass('disabled');
-                
-                // Set active page
-                $('#publications-pagination li a[data-page="' + targetPage + '"]').parent().addClass('active');
-                
-                // Update prev/next buttons
-                if (targetPage == 1) {
-                    $('.pagination-prev').addClass('disabled');
-                    $('.pagination-prev span').show();
-                    $('.pagination-prev a').hide();
-                } else {
-                    $('.pagination-prev').removeClass('disabled');
-                    $('.pagination-prev span').hide();
-                    $('.pagination-prev a').show().data('page', targetPage - 1);
+            var ITEMS_PER_PAGE = 10;
+            var allItems = [];
+            var currentPage = 1;
+            var searchQuery = '';
+
+            function parseDateFromText(text) {
+                if (!text) return new Date(0);
+                var t = ('' + text).trim();
+                var tl = t.toLowerCase();
+                if (tl.indexOf('in press') !== -1 || tl.indexOf('under review') !== -1) {
+                    return new Date(3000, 0, 1);
                 }
-                
-                var totalPages = 2; // Update this if you add more pages
-                if (targetPage == totalPages) {
-                    $('.pagination-next').addClass('disabled');
-                    $('.pagination-next span').show();
-                    $('.pagination-next a').hide();
-                } else {
-                    $('.pagination-next').removeClass('disabled');
-                    $('.pagination-next span').hide();
-                    $('.pagination-next a').show().data('page', targetPage + 1);
+                var yearMatch = t.match(/\b(\d{4})\b/);
+                var year = yearMatch ? parseInt(yearMatch[1], 10) : null;
+                var months = {
+                    'january': 0, 'february': 1, 'march': 2, 'april': 3, 'may': 4, 'june': 5,
+                    'july': 6, 'august': 7, 'september': 8, 'october': 9, 'november': 10, 'december': 11
+                };
+                var month = 0;
+                Object.keys(months).forEach(function(name) {
+                    if (tl.indexOf(name) !== -1) month = months[name];
+                });
+                if (year) return new Date(year, month, 1);
+                return new Date(0);
+            }
+
+            function extractItemDate($item) {
+                var detailed = $item.find('.publication-content .publication-date').first().text();
+                if (detailed) return parseDateFromText(detailed);
+                var yr = $item.children('.publication-date').first().text();
+                return parseDateFromText(yr);
+            }
+
+            function collectAllItems() {
+                if (allItems.length > 0) return;
+                $('#publications-container .publication-item').each(function() {
+                    var $it = $(this);
+                    allItems.push({ node: this, date: extractItemDate($it), type: $it.data('type') });
+                });
+                // Remove existing pages; we'll rebuild dynamically
+                $('#publications-container .publications-page').remove();
+            }
+
+            function renderPagination(totalPages) {
+                var $p = $('#publications-pagination');
+                $p.empty();
+                // Previous button (visible only if a previous page exists)
+                if (totalPages > 1 && currentPage > 1) {
+                    var $prevLi = $('<li class="pagination-prev"></li>');
+                    var $prevA = $('<a href="#" data-page="' + (currentPage - 1) + '"><i class="fa fa-chevron-left"></i> Previous</a>');
+                    $prevLi.append($prevA);
+                    $p.append($prevLi);
                 }
-            });
-            
-            // Sorting and filtering functionality
-            function applyFiltersAndSort() {
+                for (var i = 1; i <= totalPages; i++) {
+                    if (i === currentPage) {
+                        $p.append($('<li class="active"><span>' + i + '</span></li>'));
+                    } else {
+                        $p.append($('<li><a href="#" data-page="' + i + '">' + i + '</a></li>'));
+                    }
+                }
+                // Next button (visible only if a next page exists)
+                if (totalPages > 1 && currentPage < totalPages) {
+                    var $nextLi = $('<li class="pagination-next"></li>');
+                    var $nextA = $('<a href="#" data-page="' + (currentPage + 1) + '">Next <i class="fa fa-chevron-right"></i></a>');
+                    $nextLi.append($nextA);
+                    $p.append($nextLi);
+                }
+            }
+
+            function renderItems() {
                 var sortOrder = $('#sort-pubs').val();
                 var filterType = $('#filter-pubs').val();
-                var $pubContainer = $('#publications-container');
-                
-                // Show all items first
-                $('.publication-item').show();
-                
-                // Apply type filtering
-                if (filterType !== 'all') {
-                    $('.publication-item').not('[data-type="' + filterType + '"]').hide();
-                }
-                
-                // Apply sorting
-                var $pages = $pubContainer.find('.publications-page').detach();
-                $pages.each(function() {
-                    var $page = $(this);
-                    var $items = $page.find('.publication-item:visible').detach();
-                    
-                    $items.sort(function(a, b) {
-                        var yearA = parseInt($(a).find('.publication-date').text());
-                        var yearB = parseInt($(b).find('.publication-date').text());
-                        
-                        if (sortOrder === 'oldest') {
-                            return yearA - yearB;
-                        } else {
-                            return yearB - yearA;
-                        }
-                    });
-                    
-                    $page.append($items);
+                var filtered = allItems.filter(function(it) {
+                    if (filterType === 'all') return true;
+                    return ('' + it.type) === filterType;
                 });
-                $pubContainer.append($pages);
-                
-                // Reset to first page
-                $('#publications-pagination a[data-page="1"]').click();
+                if (searchQuery) {
+                    var q = searchQuery.toLowerCase();
+                    filtered = filtered.filter(function(it) {
+                        var $el = $(it.node);
+                        var text = $el.text().toLowerCase();
+                        return text.indexOf(q) !== -1;
+                    });
+                }
+                filtered.sort(function(a, b) {
+                    if (sortOrder === 'oldest') return a.date - b.date;
+                    return b.date - a.date;
+                });
+                var totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
+                if (currentPage > totalPages) currentPage = totalPages;
+                var start = (currentPage - 1) * ITEMS_PER_PAGE;
+                var end = start + ITEMS_PER_PAGE;
+                var pageSlice = filtered.slice(start, end);
+
+                var $container = $('#publications-container');
+                $container.empty();
+                var $page = $('<div class="publications-page" data-page="' + currentPage + '"></div>');
+                pageSlice.forEach(function(it) {
+                    var $node = $(it.node);
+                    if ($node.find('.cite-actions').length === 0) {
+                        var $actions = $('<div class="cite-actions"></div>');
+                        var $btn = $('<button type="button" class="cite-btn" data-cite="open">Cite</button>');
+                        $actions.append($btn);
+                        $node.find('.publication-content').append($actions);
+                    }
+                    $page.append($node);
+                });
+                $container.append($page);
+                renderPagination(totalPages);
             }
-            
-            // Bind events
+
+            collectAllItems();
+            renderItems();
+
             $('#sort-pubs, #filter-pubs').on('change', function() {
-                applyFiltersAndSort();
+                currentPage = 1;
+                renderItems();
             });
-            
-            // Initialize with default settings
-            applyFiltersAndSort();
+
+            $('#search-pubs').on('input', function() {
+                searchQuery = $(this).val();
+                currentPage = 1;
+                renderItems();
+            });
+
+            $('#publications-pagination').on('click', 'a[data-page]', function(e) {
+                e.preventDefault();
+                var target = parseInt($(this).data('page'), 10);
+                if (!isNaN(target) && target >= 1) {
+                    currentPage = target;
+                    renderItems();
+                }
+            });
+
+            // Modal skeleton (once)
+            if ($('#cite-modal-overlay').length === 0) {
+                var modalHtml = '' +
+                '<div class="cite-modal-overlay" id="cite-modal-overlay">' +
+                '  <div class="cite-modal" role="dialog" aria-modal="true" aria-labelledby="cite-modal-title">' +
+                '    <div class="cite-modal-header">' +
+                '      <h3 class="cite-modal-title" id="cite-modal-title">Cite publication</h3>' +
+                '      <button class="cite-modal-close" id="cite-modal-close" aria-label="Close">×</button>' +
+                '    </div>' +
+                '    <div class="cite-modal-body">' +
+                '      <div class="cite-tabs">' +
+                '        <button class="cite-tab-btn active" data-format="apa">APA</button>' +
+                '        <button class="cite-tab-btn" data-format="bib">BibTeX</button>' +
+                '      </div>' +
+                '      <div class="cite-content">' +
+                '        <textarea class="cite-textarea" id="cite-text" readonly>Loading...</textarea>' +
+                '      </div>' +
+                '    </div>' +
+                '    <div class="cite-footer">' +
+                '      <button class="cite-copy-btn" id="cite-copy">Copy</button>' +
+                '      <div class="cite-helper-links">' +
+                '        <a id="cite-scholar-link" href="https://scholar.google.com/" target="_blank" rel="noopener">Find on Google Scholar</a>' +
+                '      </div>' +
+                '    </div>' +
+                '  </div>' +
+                '</div>';
+                $('body').append(modalHtml);
+            }
+
+            function openCiteModalFor($pubItem) {
+                var title = $pubItem.find('h2').first().text().trim();
+                var authors = $pubItem.find('.publication-authors').first().text().trim();
+                var venue = $pubItem.find('.publication-venue').first().text().trim();
+                var yearText = $pubItem.children('.publication-date').first().text().trim() ||
+                               $pubItem.find('.publication-content .publication-date').first().text().trim();
+                var doiHref = $pubItem.find('.publication-links a[href*="doi.org/"]').first().attr('href') || '';
+                var doiMatch = doiHref.match(/doi\.org\/([^?#]+)/);
+                var doi = doiMatch ? doiMatch[1] : '';
+                var pmlrHref = $pubItem.find('.publication-links a[href*="proceedings.mlr.press"]').first().attr('href') || '';
+
+                var cacheKey = doi || (title + '|' + yearText);
+                window.__citeCache = window.__citeCache || {};
+
+                function fetchAPAFromDOI(doiStr) {
+                    return fetch('https://doi.org/' + encodeURIComponent(doiStr), {
+                        method: 'GET',
+                        headers: { 'Accept': 'text/x-bibliography; style=apa' }
+                    }).then(function(r){ return r.text(); });
+                }
+
+                function fetchBibFromDOI(doiStr) {
+                    return fetch('https://doi.org/' + encodeURIComponent(doiStr), {
+                        method: 'GET',
+                        headers: { 'Accept': 'application/x-bibtex' }
+                    }).then(function(r){ return r.text(); });
+                }
+
+                function fetchBibFromPMLR(url) {
+                    var bibUrl = url.replace(/\.html(.*)?$/, '.bib');
+                    return fetch(bibUrl, { method: 'GET' }).then(function(r){ return r.text(); });
+                }
+
+                function formatAPA() {
+                    var apa = '';
+                    if (authors) apa += authors + '. ';
+                    if (yearText) apa += '(' + yearText.replace(/[^0-9]{0,}/g,'').slice(0,4) + '). ';
+                    if (title) apa += title + '. ';
+                    if (venue) apa += venue + '.';
+                    return apa.trim();
+                }
+
+                function formatBib() {
+                    var key = (authors || 'unknown').split(',')[0].replace(/[^a-zA-Z0-9]/g,'') + (yearText.match(/\d{4}/) ? yearText.match(/\d{4}/)[0] : '');
+                    var bib = '@misc{' + key + ',\n' +
+                              '  author = {' + authors + '},\n' +
+                              '  title = {' + title + '},\n' +
+                              '  howpublished = {' + venue + '},\n' +
+                              '  year = {' + (yearText.match(/\d{4}/) ? yearText.match(/\d{4}/)[0] : '') + '}\n' +
+                              '}';
+                    return bib;
+                }
+
+                var $overlay = $('#cite-modal-overlay');
+                $overlay.addClass('show');
+                $overlay.show();
+                $('#cite-text').val(formatAPA());
+                $('.cite-tab-btn').removeClass('active');
+                $('.cite-tab-btn[data-format="apa"]').addClass('active');
+                // Update Scholar link with best-effort query
+                var scholarQ = encodeURIComponent((title || '') + ' ' + (authors || '') + ' ' + (yearText || ''));
+                $('#cite-scholar-link').attr('href', 'https://scholar.google.com/scholar?q=' + scholarQ);
+
+                // Prefetch APA/Bib using DOI/PMLR where available
+                if (doi) {
+                    if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey] = {};
+                    // APA via Crossref content negotiation
+                    fetchAPAFromDOI(doi).then(function(txt){ window.__citeCache[cacheKey].apa = txt; if ($('.cite-tab-btn.active').data('format')==='apa') $('#cite-text').val(txt); }).catch(function(){});
+                    // BibTeX via Crossref
+                    fetchBibFromDOI(doi).then(function(txt){ window.__citeCache[cacheKey].bib = txt; }).catch(function(){});
+                } else if (pmlrHref) {
+                    if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey] = {};
+                    fetchBibFromPMLR(pmlrHref).then(function(txt){ window.__citeCache[cacheKey].bib = txt; }).catch(function(){});
+                }
+
+                $('.cite-tab-btn').off('click').on('click', function() {
+                    $('.cite-tab-btn').removeClass('active');
+                    $(this).addClass('active');
+                    var fmt = $(this).data('format');
+                    if (fmt === 'bib') {
+                        var cachedBib = window.__citeCache[cacheKey] && window.__citeCache[cacheKey].bib;
+                        if (cachedBib) {
+                            $('#cite-text').val(cachedBib);
+                        } else if (doi) {
+                            $('#cite-text').val('Loading BibTeX from DOI...');
+                            fetchBibFromDOI(doi).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].bib = txt; }).catch(function(){ $('#cite-text').val(formatBib()); });
+                        } else if (pmlrHref) {
+                            $('#cite-text').val('Loading BibTeX from PMLR...');
+                            fetchBibFromPMLR(pmlrHref).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].bib = txt; }).catch(function(){ $('#cite-text').val(formatBib()); });
+                        } else {
+                            $('#cite-text').val(formatBib());
+                        }
+                    } else {
+                        var cachedApa = window.__citeCache[cacheKey] && window.__citeCache[cacheKey].apa;
+                        if (cachedApa) {
+                            $('#cite-text').val(cachedApa);
+                        } else if (doi) {
+                            $('#cite-text').val('Loading APA from DOI...');
+                            fetchAPAFromDOI(doi).then(function(txt){ $('#cite-text').val(txt); if (!window.__citeCache[cacheKey]) window.__citeCache[cacheKey]={}; window.__citeCache[cacheKey].apa = txt; }).catch(function(){ $('#cite-text').val(formatAPA()); });
+                        } else {
+                            $('#cite-text').val(formatAPA());
+                        }
+                    }
+                });
+
+                $('#cite-copy').off('click').on('click', function() {
+                    var text = $('#cite-text').val();
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(text);
+                    } else {
+                        var ta = document.getElementById('cite-text');
+                        ta.select();
+                        ta.setSelectionRange(0, 99999);
+                        document.execCommand('copy');
+                    }
+                });
+
+                $('#cite-modal-close').off('click').on('click', function() {
+                    $('#cite-modal-overlay').removeClass('show').hide();
+                });
+                $('#cite-modal-overlay').off('click').on('click', function(e) {
+                    if (e.target.id === 'cite-modal-overlay') {
+                        $('#cite-modal-overlay').removeClass('show').hide();
+                    }
+                });
+            }
+
+            // handle cite button clicks
+            $(document).on('click', '.cite-btn', function() {
+                var $pubItem = $(this).closest('.publication-item');
+                openCiteModalFor($pubItem);
+            });
         });
     </script>
 </body>
