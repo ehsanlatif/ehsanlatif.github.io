@@ -1,0 +1,167 @@
+﻿Ehsan Latif 
+Research Scientist
+Athens, GA, 30605  · ehsanlatif000@gmail.com · LinkedIn · Google Scholar
+SUMMARY OF QUALIFICATIONS
+________________
+
+
+* AI Researcher with 5+ years of experience specializing in natural language processing, large language models (LLMs), multi-agent/multi-robot systems, and autonomous and intelligent systems optimizations.
+* Conducts high-impact AI research in decision-making, AI orchestration, and trustworthy AI, with a focus on safe, robust, and sustainable AI applications.
+* Expertise in training and optimizing transformer-based models (BERT, GPT, LLaMA, etc.), efficient inference deployment, and integrating LLMs into multi-agent coordination and sequential decision-making.
+* Experienced in designing experiments, implementing novel algorithms, and developing evaluation frameworks for multi-agent reinforcement learning, evolutionary AI, and open-ended AI research..
+* Proficient in ROS/ROS2, CUDA, PyTorch/Tensorflow, AWS, Python, C++, Matlab, and Linux, with experience in real-world AI deployments, simulation environments, and large-scale distributed training.
+* Passionate about AI for Good, actively contributing to research that enhances AI safety, robustness, and long-term sustainability while bridging fundamental research with real-world applications.
+TECHNICAL PROFICIENCIES
+________________
+
+
+Tools/Frameworks: ROS, ROS2, VSCode, Android Studio, XCode, PyCharm, Linux, Firebase, PyTorch, TensorFlow, Langchain, AWS, HuggingFace, and Git.
+Programming languages: C/C++/C#, Java, Android, Swift, Python, MySQL/ SQL/ SQLite/ DynamoDB, and Django
+EDUCATION
+________________
+
+
+The University of Georgia – Athens, GA                                                                   January 2021 – August 2023
+Doctor of Philosophy in Computer Science
+Dissertation Title: Collaborative Algorithms for Localization and Exploration in Multi-Robot Systems
+Committee: Ramviyas Parasuraman (Major Supervisor), Liming Cai, and Wenzhan Song
+Cumulative GPA: 3.91/4.00
+Earned Machine Learning Specialization and Natural Language Processing Specialization from Stanford University (Online).
+The National University of Computer and Emerging Sciences – Lahore, PK                 August 2014 – May 2018
+Bachelor of Science in Computer Science
+Cumulative GPA: 3.2/4.00
+Earned Android Application Development Certification, 2016
+WORK EXPERIENCE
+________________
+
+
+Research Scientist – Lahore University of Management Sciences – Lahore, PK                July 2025 – Present
+* A joint position on “SAFE ONLINE” Google Funded Project and LUMS faculty’s AI venture (Plus1MD) on the creation of the State-of-the-Art Ambient Scribe tool powered by cutting-edge AI tools.
+* Lead both the research and development sides of both projects: SAFE ONLINE focuses more on the child safety aspect for online content, and Plus1MD focuses on the real-world impact of AI Scribe.
+Postdoctoral Research Associate – AI4STEM Education Center – Athens, GA       September 2023 – July 2025
+* Lead researcher on NSF-funded projects using LLMs (e.g., GPT-3.5/4) for automated scoring and rubric generation in STEM education.
+* Supervise a team of graduate and undergraduate students in AI tool development, model deployment, and education platform prototyping.
+* Conducted workshops and surveys for schools to gather real-world feedback and evaluate ML system usability.
+* Integrated knowledge distillation techniques to deploy efficient models in low-resource educational environments.
+Graduate Research Assistant – School of Computing – Athens, GA                             January 2021 – July 2023
+* Conducted research on multi-robot systems to improve localization accuracy, efficient Path planning, and exploration in dense and dynamic environments.
+* Collaborated with eight researchers to conduct impactful research in the robotics domain.
+Research Assistant – College of Education – Athens, GA                                                March 2021 – May 2023
+* Developed software solutions for automatic scoring for middle school science education assessments.
+* Served as a project leader and software developer by delegating development tasks and conducting discussion sessions.
+* Participated in interdisciplinary research on the application of artificial intelligence in education and trained machine learning models for natural language-based science assessments.
+Research Associate – Lahore University of Management Sciences – Lahore, PK        Jan 2019 – December 2020
+* Worked at NSG Lab under Dr. Ihsan Ayyub Qazi on a mobile web optimization project.
+* Collaborate with a team that analyzes mobile web behavior under high memory and processing pressure.
+Software Engineer – Strategic Systems International – Lahore, PK                            August 2018 – January 2019
+* Researched building synchronization framework code items, materials, and similar building plans for heterogeneous systems.
+* Implemented a framework to synchronize data from multiple sources.
+* Worked with five software engineers focused on researching and developing healthcare systems.
+TEACHING EXPERIENCE
+________________
+
+
+Co-Instructor – College of Education – Athens, GA                                                                              Spring 2024
+* Course: ESCI 6250E, Social Scientific Issues in Science Education
+* Co-instruct with Dr. Xiaoming Zhai
+* Created and graded creative and formative tasks for assessment.
+* Conducted book clubs for one-on-one discussions with students
+Teaching Assistant – School of Computing – NUCES, PK                                              Fall 2016 & Spring 2017
+* Course: Information Retrieval and Natural Language Processing
+* Designed Assignments and quizzes and evaluated semester projects.
+* Mentored students in conducting research.
+PUBLICATIONS
+JOURNAL PUBLICATIONS
+________________
+
+
+Lee, G., Shi, L., Latif, E., Gao, Y., Bewersdorff, A., Nyaaba, M., ... & Zhai, X. (2025). “Multimodality of AI for education: Towards artificial general intelligence” in IEEE Transactions on Learning Technologies, May 2025, https://doi.org/10.1109/TLT.2025.3574466 
+Wu, X., Saraf, P. P., Lee, G. G., Latif, E., Liu, N., & Zhai, X.,  (2025). “Unveiling Scoring Processes: Dissecting the Differences between LLMs and Human Graders in Automatic Scoring” in Technology, Knowledge and Learning, March 2025, https://doi.org/10.1007/s10758-025-09836-8 
+Yang, J., Latif, E., & Zhai X., (2025). “Fine-Tuning ChatGPT for Automatic Scoring of Written Scientific Explanations in Chinese” in Journal of Science Education and Technology, February 2025, https://doi.org/10.1007/s10956-025-10199-z 
+Latif, E., & Parasuraman, R., (2024). “Communication-Efficient Multi-Robot Exploration Using Coverage-biased Distributed Q-Learning.” in IEEE Robotics and Automation Letters, vol. 9, no. 3, pp. 2622-2629, March 2024, https://doi.org/10.1109/LRA.2024.3358095.
+Latif, E., & Zhai X., (2024). “Fine-tuning ChatGPT for Automatic Scoring” in Computer and Education: Artificial Intelligence. 100210, 1-10, https://doi.org/10.1016/j.caeai.2024.100210.
+Lee, G. G., Latif, E., Wu, X., Liu, N., & Zhai, X., (2024) “Applying Large Language Models and Chain-of-Thought for Automatic Scoring.” in Computers & Education: Artificial Intelligence, https://doi.org/10.1016/j.caeai.2024.100213
+Latif, E., & Parasuraman, R., (2023). “Instantaneous Wireless Robotic Node Localization Using Collaborative Direction of Arrival.” IEEE Internet of Things Journal. vol. 11, no. 2, pp. 2783-2795, 15 Jan.15, 2024, https://doi.org/10.1109/JIOT.2023.3296334.
+Latif, E., Parasuraman, R., (2023) “On the Intersection of Computational Geometry Algorithms with Mobile Robot Path Planning.” Algorithms. 2023; 16(11):498. https://doi.org/10.3390/a16110498.
+JOURNAL MANUSCRIPTS (UNDER REVIEW/REVISIONS)
+________________
+
+
+Latif, E., Zhai, X., & Liu, L. (Under Review) “AI Gender Bias, Disparities, and Fairness: Does Training Data Matter?”. in Educational Technology & Society, Preprint: https://arxiv.org/abs/2312.10833.
+Latif, E., Mai G., Nyaaba M., Wu X., Liu N., Lu G., Li S., Liu T., Zhai X. (Under Review) “Artificial General Intelligence (AGI) for Education” in Technology and Society: https://arxiv.org/abs/2304.12479. 
+Liu, V., Latif, E., & Zhai, X. (Under Review) “Advancing Education through Tutoring Systems: A Systematic Literature Review” in IEEE Transactions of Learning Technologies.
+Guo, S., Latif, E., Zhou, Y., Zhai, X. (Minor Revision). “Using Generative AI and Multi-Agents to Provide Automatic Feedback” in the British Journal of Education Technology.
+Latif, E., Zhou, Y., Guo, S.,... Zhai, X. (Major Revision). “A Systematic Assessment of OpenAI o1-Preview for Higher Order Thinking in Education” in Scientific Reports, Nature.
+CONFERENCE PUBLICATIONS
+________________
+
+
+Latif, E., Khan, Z., & Zhai X. (2025) “SketchMind: A Multi-Agent Cognitive Framework for Assessing Student-Drawn Scientific Sketches” In Neural Information Processing Systems (NeurIPS 2025).
+Gąsieniec, L., Kuszner, L., Latif, E., Parasuraman, R., Spirakis, P., & Stachowiak, G. (2025). “Anonymous Self-Stabilising Localisation via Spatial Population Protocols.” In the International Symposium on Algorithms and Computation (ISAAC 2025).
+Latif, E., & Zhai, X. (2025). “Privacy-Preserved Automated Scoring using Federated Learning for Educational Research.” In the International Conference on Artificial Intelligence in Education (AIED 2025). https://doi.org/10.1007/978-3-031-99267-4_17 
+Fang, L., Latif, E., Lu, H., Zhou, Y., Ma, P., & Zhai, X. (2025). “Efficient multi-task inference: Model merging with Gromov-Wasserstein feature alignment.” In the International Conference on Artificial Intelligence in Education (AIED 2025). https://doi.org/10.1007/978-3-031-99267-4_24 
+Guo, S., Wang, Y., Yu, J., Wu, X., Aykin, B., Watt, F., Latif, E., Liu, L., Liu, N., & Zhai, X. (2024). “Artificial Intelligence Bias on English Language Learners in Automatic Scoring.” In the International Conference on Artificial Intelligence in Education (AIED 2025). https://doi.org/10.1007/978-3-031-98462-4_34 
+Latif, E., & Zhai, X. (2025). “Efficient Multi-Task Inferencing with a Shared Backbone and Lightweight Task-Specific Adapters for Automatic Scoring.” In 2025, Association for the Advancement of Artificial Intelligence Workshop on Meta-Innovation and Responsibility in AI-Supported Education (pp. 1-12). PMLR. https://proceedings.mlr.press/v273/latif25a.html 
+Lee, G., Shi, L., Latif, E., & Zhai, X. (2025). “Gemini Pro Defeated by GPT-4V: Evidence from Education”. In 2024, NeurIPS Workshop on Large Foundation Models for Educational Assessment (pp. 1-13). PMLR. https://proceedings.mlr.press/v264/lee25a.html 
+Munir, A., Latif, E., & Parasuraman, R. “Anchor-Oriented Localized Voronoi Partitioning for GPS-denied Multi-Robot Coverage.” In 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS),  Abu Dhabi, United Arab Emirates, 2024, pp. 3395-3402, https://doi.org/10.1109/IROS58592.2024.10802222.
+Latif, E., & Parasuraman, R., “HGP-RL: Distributed Hierarchical Gaussian Processes for Wi-Fi-based Relative Localization in Multi-Robot Systems.” In 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Abu Dhabi, United Arab Emirates, 2024, pp. 3387-3394, https://doi.org/10.1109/IROS58592.2024.10802653.
+Ravipati, S., Latif, E., Bhandarkar, S., & Parasuraman, R., “Object-Oriented Material Classification and 3D Clustering for Improved Semantic Perception and Mapping in Mobile Robots” In 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Abu Dhabi, United Arab Emirates, 2024, pp. 9729-9736, https://doi.org/10.1109/IROS58592.2024.10801936. 
+Latif, E., Parasuraman, R., & Zhai X., “PhysicsAssistant: An LLM-Powered Interactive Learning Robot for Physics Lab Investigations.” In 2024, IEEE International Conference on Robot and Human Interactive Communication (ROMAN), Pasadena, CA, USA, 2024, pp. 864-871, https://doi.org/10.1109/RO-MAN60168.2024.10731312 
+Latif, E., Fang, L., Ma, P., & Zhai X., “Knowledge Distillation of LLM for Automatic Scoring of Science Education Assessments” in International Conference on Artificial Intelligence in Education (AIED 2024). https://doi.org/10.1007/978-3-031-64312-5_20
+Latif, E & Zhai, X., “Automatic Scoring of Students' Science Writing Using Hybrid Neural Network” In Proceedings of the 2024 AAAI Conference on Artificial Intelligence, PMLR 257:97-106. https://proceedings.mlr.press/v257/latif24a.html 
+Latif, E., & Parasuraman, R., “SEAL: Simultaneous Exploration and Localization for Multi-Robot Systems.” In 2023, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Detroit, MI, USA, 2023, pp. 5358-5365, https://doi.org/10.1109/IROS55552.2023.10342157.
+Latif, E., & Parasuraman, R., “Communication-Efficient Reinforcement Learning in Swarm Robotic Networks for Maze Exploration.” In 2023 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Hoboken, NJ, USA, 2023, pp. 1-6, https://doi.org/10.1109/INFOCOMWKSHPS57453.2023.10226167.
+Latif, E., & Parasuraman, R., “DGORL: Distributed Graph Optimization based Relative Localization of Multi-Robot Systems.” In 2022, International Symposium on Distributed Autonomous Robotic Systems (DARS, 2022), (pp. 243-256). Cham: Springer Nature Switzerland, https://doi.org/10.1007/978-3-031-51497-5_18 (Nominated as Best Student Author Award)
+Latif, E., & Parasuraman, R., “Multi-Robot Synergistic Localization in Dynamic Environments.” In 2022, ISR Europe 2022; 54th International Symposium on Robotics, pp. 1-8. VDE, 2022. https://ieeexplore.ieee.org/document/9861805 
+Latif, E., Munir, A., Gui, Y., & Parasuraman, R., “Energy-Aware Multi-Robot Task Allocation in Persistent Tasks.” In 2022, IEEE International Symposium on Swarm Behavior and Bio-Inspired Robotics.
+Gui, Y., Latif, E., & Parasuraman, R., “Message Expiration-Based Distributed Multi-Robot Task Management.” In 2022, IEEE International Symposium on Swarm Behavior and Bio-Inspired Robotics.
+Qazi, I. A., Qazi, Z. A., Benson, T. A., Murtaza, G., Latif, E., Manan, A., & Tariq, A. (2020). “Mobile web browsing under memory pressure.” In 2020, ACM SIGCOMM Computer Communication Review, 50, 4 (October 2020), 35–48. https://doi.org/10.1145/3431832.3431837
+BOOK CHAPTER
+________________
+
+
+Latif, E., Zhai, X., Amerman, H., & He, X. (2025). “Automatic Scoring Platform for AI-Based Formative Assessment.” X., Zhai & J., Krajcik (Eds.), Uses of Artificial Intelligence in STEM Education. (pp. 271-296). New York, NY: Oxford University Press. 
+Latif, E., Ma, W., & Zhai, X. (In Press). “Intelligent Tutor for STEM Learning”. In X. Zhai & G. Lee (Eds.). Artificial Intelligence for STEM Education Research – Advanced Methods and Applications. Springer.
+Latif, E., Ma, W., & Zhai, X. (In Press). “Using Artificial Intelligence for Automatic Scoring”. In X. Zhai & G. Lee (Eds.). Artificial Intelligence for STEM Education Research – Advanced Methods and Applications. Springer.
+GRANTS AND FUNDINGS
+PROJECTS INVOLVED
+________________
+
+
+2024 – 2029 Key Personnel, “GenAI Empowered National Initiative for Upholding STEM+C Education (GENIUS).” Award ID: R305C240010, Institute of Education Sciences, $10,000,000. (PI, Xiaoming Zhai).
+2024 – 2029 Key Personnel: “Automatic Measurement of Student Reasoning Patterns in Scientific Argumentation (Auto-SPIN-SA)” Award ID: R305A240356 Institute of Education Sciences, $1,999,682. (PI, Lei Liu).
+2023 – 2025 Postdoc Research Associate: “Collaborative Research: Supporting Instructional Decision Making: The Potential of An Automatically Scored Three-dimensional Assessment System (PASTA).” Award ID: 2101104, 2100964, 2101166, 2101112. National Science Foundation, $2,999,996 (UGA, $903,421; MSU, $ 890,000; UIC, $ 596,575; WestEd, $610,000).
+AWARDS/HONORS
+________________
+
+
+Best Paper Award at AIED 2025: Out of 1000+ papers, my authored paper on “Efficient Multi-Task Inferencing: Model Merging with Gromov-Wasserstein Feature Alignment” was nominated for the Best Paper Award at the 26th International Conference on Artificial Intelligence in Education (AIED 2025).
+CPS Rising Star 2025: I was awarded a highly competitive (<0.17 acceptance rate) fellowship to attend the NSF Cyber-Physical Systems Rising Star Workshop and PI meeting, where I established scholarships and networks within the CPS community.
+Pioneers of Natural Sciences Laboratory Robotics Award at ICRA-24: My work on “PhysicsAssistant” has been selected for the Pioneers of Natural Sciences Laboratory Robotics talk at the International Conference on Robotics and Automation 2024 Accelerating Scientific Discovery Workshop and received an award of £500. The Leverhulme Research Centre for Functional Materials Design and the Acceleration Consortium funded the prize.
+CGS/ProQuest Distinguished Dissertation Award: My PhD dissertation is nominated by the University of Georgia for the 2024 ProQuest Distinguished Dissertation Award based on the quality and impact of my dissertation work in the field of computer science and robotics.
+Graduate Research Excellence Award: I was nominated by the School of Computing for the Research Excellence Award based on my research and technical contributions during my doctoral studies.
+Outstanding Graduate Student Award: I received the Outstanding Graduate Student Award from the School of Computing at the University of Georgia for my research contributions as a graduate research assistant.
+Open Science Publication Award: I received the Open Science Publication Award from the Open Science Alliance, funded by the National Science Foundation, for contributing to the open publication of my data.
+UGA-Liverpool Research Fellowship: I have been awarded a short-term research fellowship to conduct research at the School of Computing, University of Liverpool, Manchester, UK.
+International Travel Grants: I have received multiple travel grants for international trips to present my work at conferences, including DARS-2022 in Montbéliard, France, ICRA-2023 in London, UK, AAAI-2024 in Vancouver, CA, ICRA-2024 in Yokohama, Japan, AIED-2024 in Recife, Brazil, and NeurIPS-2024 in Vancouver, CA.
+James L. Carmon Scholarship Award: Honorable Mention 2023, Prestigious Computing Research Award. I received this award for excellence in designing and implementing efficient computing algorithms for robotics and was funded by the University of Georgia for one year.
+Academic SERVICES
+GUEST EDITOR
+________________
+
+
+2024 – Present International Journal of Science Education, Special Issue: The Game-Changer: Generative Artificial Intelligence for Science Education and Research
+CONFERENCE CHAIR
+________________
+
+
+Program Chair of “Workshop on  Epistemics and Decision-Making in AI-Supported Education” at the 26th International Conference on Artificial Intelligence in Education.
+Session Chair of “Technical Session 14: Automatic grading and assessment” at the 25th International Conference on Artificial Intelligence in Education.
+AD-HOC REVIEWER
+________________
+
+
+2024 – Present                International Conference on Artificial Intelligence in Education (AIED), ECNU Review of Education, International Journal of Science Education, Education Sciences, Engineering Reports, Electronics, Robots and Autonomous Systems, Education and Information Technologies (EAIT).
+2023 – Present                            International Journal of Human-Computer Interaction (IJHCI), IEEE Robotics and Automation Letters (RA-L), IEEE Transactions of Learning Technologies (TLT).
+2022 – Present                International Symposium on Distributed Autonomous Robotic Systems (DARS), IEEE International Conference on Robotics and Automation (ICRA), IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), IEEE Vehicular Technology Conference (VTC), IEEE Multi-Robot Systems (MRS). 
+Latif_CV_Updated_08-02-2025

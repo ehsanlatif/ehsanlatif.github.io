@@ -188,9 +188,10 @@ main {
 
 .publications .publication-venue {
   font-style: italic;
-  color: #3498db;
+  color: #0b3d91;
   margin-bottom: 15px;
   font-size: 1.3rem;
+  font-weight: 700; /* Emphasize conference/journal name */
 }
 
 .publications .publication-date {
@@ -1701,17 +1702,18 @@ footer .social-links a:hover {
 .sort-filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 16px 28px;
     margin-bottom: 20px;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: center; /* vertical alignment */
+    justify-content: space-between; /* even spacing across container */
 }
 
 .sort-controls,
 .filter-controls {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: center; /* vertical centering within each control group */
     gap: 10px;
+    height: 40px; /* match select height */
 }
 
 .sort-controls label,
@@ -1719,22 +1721,31 @@ footer .social-links a:hover {
     margin-right: 10px;
     font-weight: 500;
     color: #555;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1;
 }
 
 .sort-select,
 .filter-select {
-    padding: 8px 15px;
+    padding: 10px 16px;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #fff;
     font-size: 0.95rem;
     color: #333;
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-position: right 10px center;
+    background-position: right 14px center;
     background-size: 14px;
-    padding-right: 40px;
+    padding-right: 60px; /* extra padding so arrow never overlaps text */
+    height: 40px;
+    line-height: 20px;
+    min-width: 210px;
     cursor: pointer;
     transition: border-color 0.2s;
 }
@@ -2034,6 +2045,34 @@ footer .social-links a:hover {
     margin-bottom: 10px;
     color: #333;
     font-weight: 600;
+}
+
+/* Dark blue titles for publications section */
+.publications-section .publication-content h2, 
+.publications .publication-content h2 {
+    color: #0b3d91; /* dark blue for prominence */
+    font-style: italic;
+}
+
+/* Highlight paper titles embedded in text */
+.paper-title {
+    color: #0b3d91;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Conference/venue name styling in news/index text */
+.conference-name {
+    color: #0b3d91;
+    font-weight: 700;
+}
+
+/* Underline primary author name (used via <strong>Ehsan Latif</strong>) */
+.news-content strong,
+.latest-news-section strong,
+.publications-section .publication-authors strong {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .publication-content p {
@@ -2417,26 +2456,27 @@ h4 {
 /* --- PROJECTS PAGE IMPROVEMENTS --- */
 .projects-section .project-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* list view: image left, content right */
     background: #fff;
-    border-radius: 20px;
+    border-radius: 12px;
     box-shadow: 0 2px 16px 0 rgba(40,40,70,.06), 0 1.5px 2.5px 0 rgba(40,40,70,.03);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding: 0;
     overflow: hidden;
     transition: box-shadow .18s;
-    max-width: 490px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 480px;
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
 }
 
 .projects-section .project-image {
-    width: 100%;
-    height: 180px;
+    width: 360px; /* image column */
+    min-width: 300px;
+    height: 260px;
     overflow: hidden;
-    background: #f4f4f8;
-    border-bottom: 1px solid #eee;
+    background: #f8f9fa;
+    border-right: 1px solid #eee;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2445,10 +2485,11 @@ h4 {
 .projects-section .project-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain !important; /* show full image without cropping */
     object-position: center center;
     transition: transform .3s;
     border-radius: 0;
+    background: #fff;
 }
 
 .projects-section .project-item:hover .project-image img {
@@ -2456,10 +2497,24 @@ h4 {
 }
 
 .projects-section .project-content {
-    padding: 24px 22px 22px 22px;
+    padding: 18px 20px;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+}
+
+/* Place project action buttons just below the text (remove large gap) */
+.projects-section .project-links {
+    margin-top: 12px !important;
+}
+
+/* Ensure description does not stretch the card vertically */
+.projects-section .project-content p {
+    flex: 0 0 auto !important;
+    overflow: visible !important;
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    margin-bottom: 8px;
 }
 
 .projects-section .project-category {
@@ -2493,25 +2548,20 @@ h4 {
 
 @media (min-width: 768px) {
     .projects-section .row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px 0;
-        margin-left: -8px;
-        margin-right: -8px;
+        display: block; /* list view */
+        margin-left: 0;
+        margin-right: 0;
     }
     .projects-section .col-md-6 {
-        width: 50%;
-        max-width: 490px;
-        flex: 0 0 50%;
-        padding-left: 8px;
-        padding-right: 8px;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
         box-sizing: border-box;
-        display: flex;
-        margin-bottom: 32px;
-    }
-    .projects-section .project-item {
-        min-height: 480px;
-        height: 100%;
+        display: block;
+        float: none; /* override bootstrap columns */
+        margin-bottom: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -2519,11 +2569,22 @@ h4 {
         width: 100%;
         max-width: 100%;
         flex: 0 0 100%;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
         padding: 0;
     }
     .projects-section .project-item {
-        min-height: 0;
+        flex-direction: column; /* stack on mobile */
+    }
+    .projects-section .project-image {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    .projects-section .project-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
     }
 }
 
