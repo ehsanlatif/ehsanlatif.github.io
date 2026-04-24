@@ -2369,7 +2369,7 @@ header a {
 .profile-image img,
 .contact-image img {
     border: 3px solid white;
-    object-position: center;
+    object-position: center top;
 }
 
 /* Add a subtle zoom effect on hover */
